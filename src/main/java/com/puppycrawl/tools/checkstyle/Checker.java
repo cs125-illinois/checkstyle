@@ -506,6 +506,14 @@ public class Checker extends AutomaticBean implements MessageDispatcher, RootMod
     }
 
     /**
+     * Retrieve configured FileSetChecks.
+     * @return list of configured fileSetChecks
+     */
+    public List<FileSetCheck> getFileSetChecks() {
+        return fileSetChecks;
+    }
+
+    /**
      * Adds a before execution file filter to the end of the event chain.
      * @param filter the additional filter
      */
